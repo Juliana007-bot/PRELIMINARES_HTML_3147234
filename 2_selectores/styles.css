@@ -1,0 +1,81 @@
+/*Selectores descendientes*/
+.mainTitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#globalNav .mainTitle{
+    color: rgb(235, 32, 143);
+    
+}
+
+.contenedor .mainTitle {
+color: rgb(243, 86, 86);
+
+}
+
+footer h2 {
+    color: rgb(122, 223, 181);
+}
+
+/*Selectores hijos*/
+footer > p{
+    background-color: rgb(245, 173, 217);
+}
+
+/*Cambiar el color del developer*/
+footer > p > span{
+    color: rgb(191, 82, 212);
+} 
+
+
+/*selectores de hermandad*/
+ 
+/*Hermanos subsiguientes*/
+ footer h2 ~ p{
+    color: rgb(96, 96, 250);
+    text-decoration: underline;
+}
+/*hermanos adyacentes*/
+ .developer {
+    font-family: Courier, monospace;
+    font-size: 20px;
+ }
+
+ .developer + p{
+    background-color: rgb(15, 178, 207);
+ }
+.contenedor button{
+    background-color: rgb(99, 99, 248);
+    color: rgb(255, 240, 248);
+
+}
+/*selectores de atributos simples*/
+
+input[type]{
+    border-bottom: rgb(145, 8, 115) 2px dotted;
+    border-top: 4px solid rgb(204, 87, 228);
+    border-left: 4px solid rgb(204, 87, 228);
+    border-right: 4px solid rgb(204, 87, 228);
+  
+}
+
+/*Selectores de atributos con valor*/
+.contenedor input[type ="password"]{
+    border-left: crimson 2px dashed ;
+    border-right: crimson 2px dashed;
+}
+ /*Selectores de atributos con valor*/
+ /**/
+
+ a[href$="org"]{
+    color: peru;
+ }
+
+ a[href^=aprendices]{
+    color: pink;
+ }
+
+ a[href^=certificados]{
+    color: rgb(182, 77, 231);
+ }
